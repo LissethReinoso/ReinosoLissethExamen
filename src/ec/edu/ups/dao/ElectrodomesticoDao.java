@@ -5,10 +5,16 @@
  */
 package ec.edu.ups.dao;
 
+import ec.edu.ups.modelo.Electrodomestico;
+import java.util.SortedSet;
+
 /**
  *
  * @author Usuario
  */
 public class ElectrodomesticoDao {
+    
+    SortedSet <Electrodomestico> lista;
+    
     
 }

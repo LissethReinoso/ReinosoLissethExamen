@@ -9,6 +9,46 @@ package ec.edu.ups.modelo;
  *
  * @author Usuario
  */
-public class Lavadora {
+public class Lavadora extends Electrodomestico{
+    
+    private int carga;
+
+    public Lavadora() {
+    }
+
+    public Lavadora(int codigo) {
+        super(codigo);
+    }
+
+    public int getCarga() {
+        return carga;
+    }
+
+    public void setCarga(int carga) {
+        this.carga = carga;
+    }
+
+    
+    
+    @Override
+    public double obtenerPrecioFinal() {
+        double precioBase=10;
+        if(carga <30){
+            precioBase=precioBase+50;
+        }else{
+            precioBase=10;
+        }
+        
+        return super.obtenerPrecioFinal(); 
+    }
+
+    @Override
+    public String toString() {
+        return "Lavadora{" + "carga=" + carga + '}';
+    }
+    
+    
+    
+    
     
 }

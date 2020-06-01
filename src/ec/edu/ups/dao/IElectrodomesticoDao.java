@@ -5,10 +5,22 @@
  */
 package ec.edu.ups.dao;
 
+import ec.edu.ups.modelo.Lavadora;
+import ec.edu.ups.modelo.Television;
+import java.util.List;
+
 /**
  *
  * @author Usuario
  */
 public interface IElectrodomesticoDao {
+    
+    //CRUD
+    
+    public void createTelevision( Television television);
+    public void createLavadora(Lavadora lavadora);
+    
+    List <Lavadora> listarLavadora();
+    List <Television> listarTelevision();
     
 }
